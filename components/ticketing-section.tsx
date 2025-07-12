@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
-import DecorativeBalloon from "./decorative-balloon"
-import DecorativeConfetti from "./decorative-confetti"
-import DecorativeRibbon from "./decorative-ribbon"
-import DecorativeCard from "./decorative-card" // Re-import DecorativeCard
-import DecorativeFlower from "./decorative-flower" // Re-import DecorativeFlower
+import { Button } from "@/components/ui/button";
+import DecorativeBalloon from "./decorative-balloon";
+import DecorativeConfetti from "./decorative-confetti";
+import DecorativeRibbon from "./decorative-ribbon";
+import DecorativeCard from "./decorative-card"; // Re-import DecorativeCard
+import DecorativeFlower from "./decorative-flower"; // Re-import DecorativeFlower
 
 // Helper component for individual ticket cards
 const TicketCard = ({
@@ -17,24 +17,18 @@ const TicketCard = ({
   buttonBg,
   buttonText,
 }: {
-  title: string
-  type: string
-  price: string
-  cardBgGradient: string // e.g., "linear-gradient(to bottom right, #FFFFFF, #FDF2F8)"
-  textColor: string
-  prakasaGradientColors: string // e.g., "linear-gradient(45deg, #F0C75A, #C83C94)"
-  borderColor: string
-  buttonBg: string
-  buttonText: string
+  title: string;
+  type: string;
+  price: string;
+  cardBgGradient: string; // e.g., "linear-gradient(to bottom right, #FFFFFF, #FDF2F8)"
+  textColor: string;
+  prakasaGradientColors: string; // e.g., "linear-gradient(45deg, #F0C75A, #C83C94)"
+  borderColor: string;
+  buttonBg: string;
+  buttonText: string;
 }) => (
-  <div
-    className="relative rounded-3xl p-6 md:p-8 shadow-xl border-4 transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center h-full"
-    style={{ background: cardBgGradient, borderColor: borderColor }}
-  >
-    <h3
-      className="font-alice text-3xl md:text-4xl mb-4"
-      style={{ color: textColor, textShadow: `2px 2px 0px ${borderColor}` }}
-    >
+  <div className="relative rounded-3xl p-6 md:p-8 shadow-xl border-4 transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center h-full" style={{ background: cardBgGradient, borderColor: borderColor }}>
+    <h3 className="font-alice text-3xl md:text-4xl mb-4" style={{ color: textColor, textShadow: `2px 2px 0px ${borderColor}` }}>
       {title}
     </h3>
     <div className="mb-6">
@@ -66,7 +60,7 @@ const TicketCard = ({
       GET TICKET
     </Button>
   </div>
-)
+);
 
 export default function TicketingSection() {
   return (
@@ -74,62 +68,13 @@ export default function TicketingSection() {
       {/* Background decorative elements (Balloons, Confetti, Ribbons, Cards, Flowers) */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Balloons - Increased quantity and variety */}
-        <DecorativeBalloon
-          className="top-10 left-1/4"
-          size="w-24 h-32"
-          color="bg-[#C83C94]"
-          rotation="rotate-6"
-          opacity="opacity-20"
-          animation="animate-float"
-        />
-        <DecorativeBalloon
-          className="bottom-20 right-1/3"
-          size="w-28 h-36"
-          color="bg-[#F0C75A]"
-          rotation="-rotate-12"
-          opacity="opacity-20"
-          animation="animate-float delay-500"
-        />
-        <DecorativeBalloon
-          className="top-1/2 left-10"
-          size="w-20 h-28"
-          color="bg-white"
-          rotation="rotate-20"
-          opacity="opacity-20"
-          animation="animate-float delay-1000"
-        />
-        <DecorativeBalloon
-          className="bottom-10 left-1/4"
-          size="w-20 h-28"
-          color="bg-[#E85BB8]"
-          rotation="-rotate-8"
-          opacity="opacity-20"
-          animation="animate-float delay-1500"
-        />
-        <DecorativeBalloon
-          className="top-5 right-5"
-          size="w-24 h-32"
-          color="bg-[#C83C94]"
-          rotation="rotate-15"
-          opacity="opacity-20"
-          animation="animate-float delay-2000"
-        />
-        <DecorativeBalloon
-          className="top-1/3 right-1/4"
-          size="w-22 h-30"
-          color="bg-[#F0C75A]"
-          rotation="rotate-8"
-          opacity="opacity-20"
-          animation="animate-float delay-2500"
-        />
-        <DecorativeBalloon
-          className="bottom-1/3 left-1/2"
-          size="w-26 h-34"
-          color="bg-white"
-          rotation="-rotate-5"
-          opacity="opacity-20"
-          animation="animate-float delay-3000"
-        />
+        <DecorativeBalloon className="top-10 left-1/4" size="w-24 h-32" color="bg-[#C83C94]" rotation="rotate-6" opacity="opacity-20" animation="animate-float" />
+        <DecorativeBalloon className="bottom-20 right-1/3" size="w-28 h-36" color="bg-[#F0C75A]" rotation="-rotate-12" opacity="opacity-20" animation="animate-float delay-500" />
+        <DecorativeBalloon className="top-1/2 left-10" size="w-20 h-28" color="bg-white" rotation="rotate-20" opacity="opacity-20" animation="animate-float delay-1000" />
+        <DecorativeBalloon className="bottom-10 left-1/4" size="w-20 h-28" color="bg-[#E85BB8]" rotation="-rotate-8" opacity="opacity-20" animation="animate-float delay-1500" />
+        <DecorativeBalloon className="top-5 right-5" size="w-24 h-32" color="bg-[#C83C94]" rotation="rotate-15" opacity="opacity-20" animation="animate-float delay-2000" />
+        <DecorativeBalloon className="top-1/3 right-1/4" size="w-22 h-30" color="bg-[#F0C75A]" rotation="rotate-8" opacity="opacity-20" animation="animate-float delay-2500" />
+        <DecorativeBalloon className="bottom-1/3 left-1/2" size="w-26 h-34" color="bg-white" rotation="-rotate-5" opacity="opacity-20" animation="animate-float delay-3000" />
 
         {/* Confetti - Increased density */}
         <DecorativeConfetti
@@ -144,59 +89,14 @@ export default function TicketingSection() {
           opacity="opacity-40"
           animation="animate-pulse delay-1000"
         />
-        <DecorativeConfetti
-          className="top-1/4 left-1/4 w-1/2 h-1/2"
-          count={50}
-          opacity="opacity-30"
-          animation="animate-pulse delay-500"
-        />
+        <DecorativeConfetti className="top-1/4 left-1/4 w-1/2 h-1/2" count={50} opacity="opacity-30" animation="animate-pulse delay-500" />
 
         {/* Ribbons - Increased quantity and variety */}
-        <DecorativeRibbon
-          className="top-0 left-1/3"
-          width="w-48"
-          height="h-6"
-          color="bg-[#F0C75A]"
-          rotation="rotate-15"
-          opacity="opacity-30"
-          animation="animate-float delay-200"
-        />
-        <DecorativeRibbon
-          className="top-20 right-1/4"
-          width="w-40"
-          height="h-5"
-          color="bg-[#C83C94]"
-          rotation="-rotate-25"
-          opacity="opacity-30"
-          animation="animate-float delay-700"
-        />
-        <DecorativeRibbon
-          className="bottom-0 left-1/2"
-          width="w-56"
-          height="h-7"
-          color="bg-white"
-          rotation="rotate-10"
-          opacity="opacity-30"
-          animation="animate-float delay-1200"
-        />
-        <DecorativeRibbon
-          className="top-1/4 left-1/12"
-          width="w-36"
-          height="h-4"
-          color="bg-[#C83C94]"
-          rotation="rotate-30"
-          opacity="opacity-30"
-          animation="animate-float delay-1700"
-        />
-        <DecorativeRibbon
-          className="bottom-1/4 right-1/12"
-          width="w-44"
-          height="h-5"
-          color="bg-[#F0C75A]"
-          rotation="-rotate-18"
-          opacity="opacity-30"
-          animation="animate-float delay-2200"
-        />
+        <DecorativeRibbon className="top-0 left-1/3" width="w-48" height="h-6" color="bg-[#F0C75A]" rotation="rotate-15" opacity="opacity-30" animation="animate-float delay-200" />
+        <DecorativeRibbon className="top-20 right-1/4" width="w-40" height="h-5" color="bg-[#C83C94]" rotation="-rotate-25" opacity="opacity-30" animation="animate-float delay-700" />
+        <DecorativeRibbon className="bottom-0 left-1/2" width="w-56" height="h-7" color="bg-white" rotation="rotate-10" opacity="opacity-30" animation="animate-float delay-1200" />
+        <DecorativeRibbon className="top-1/4 left-1/12" width="w-36" height="h-4" color="bg-[#C83C94]" rotation="rotate-30" opacity="opacity-30" animation="animate-float delay-1700" />
+        <DecorativeRibbon className="bottom-1/4 right-1/12" width="w-44" height="h-5" color="bg-[#F0C75A]" rotation="-rotate-18" opacity="opacity-30" animation="animate-float delay-2200" />
 
         {/* Decorative Cards (subtle background elements) */}
         <DecorativeCard
@@ -280,17 +180,18 @@ export default function TicketingSection() {
         <div className="flex flex-col items-center mb-16">
           <div className="relative mb-4">
             {/* Placeholder for Bear Mascot - themed with pink/gold */}
-            <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 bg-[#C83C94] rounded-full flex items-center justify-center border-4 border-[#F0C75A] shadow-lg z-20">
+            {/* <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 bg-[#C83C94] rounded-full flex items-center justify-center border-4 border-[#F0C75A] shadow-lg z-20">
               <div className="w-16 h-16 bg-[#F0C75A] rounded-full flex items-center justify-center">
                 <span className="text-[#C83C94] text-xs font-bold">🐻</span>
               </div>
-              {/* Hat - themed with pink/gold */}
+             
               <div className="absolute top-0 w-16 h-8 bg-[#F0C75A] rounded-t-full -rotate-12 -right-4 border-b-2 border-[#C83C94]"></div>
-            </div>
+            </div> */}
             <h2
               className="font-alice text-7xl md:text-8xl lg:text-9xl text-[#F0C75A] relative z-10"
               style={{
-                textShadow: "6px 6px 0px #C83C94, 12px 12px 0px rgba(0,0,0,0.2), 1px 1px 0px #F0C75A",
+                color: "#F0C75A",
+                textShadow: "4px 4px 0px #C83C94, 8px 8px 0px rgba(139, 69, 19, 0.3)",
                 WebkitTextStroke: "2px #C83C94",
               }}
             >
@@ -340,5 +241,5 @@ export default function TicketingSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

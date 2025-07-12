@@ -1,5 +1,5 @@
-import { Phone, Mail, ChevronRight } from "lucide-react"
-import Image from "next/image" // Import Image component
+import { Phone, Mail, ChevronRight } from "lucide-react";
+import Image from "next/image"; // Import Image component
 
 export default function FooterSection() {
   return (
@@ -9,8 +9,7 @@ export default function FooterSection() {
       {/* Background decorative elements (subtle) */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-[#C83C94] rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-48 h-48 bg-[#F0C75A] rounded-full blur-xl animate-pulse delay-500"></div>{" "}
-        {/* Changed to Gold */}
+        <div className="absolute bottom-1/3 right-1/3 w-48 h-48 bg-[#F0C75A] rounded-full blur-xl animate-pulse delay-500"></div> {/* Changed to Gold */}
       </div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -27,56 +26,48 @@ export default function FooterSection() {
               />
             </div>
             <h3
-              className="font-alice text-3xl text-[#C83C94]" // Changed text color to Cerise Pink
+              className="font-alice text-5xl md:text-6xl  text-[#C83C94]" // Updated className
               style={{
-                textShadow: "2px 2px 0px rgba(0,0,0,0.2)",
-                WebkitTextStroke: "0.5px white",
+                color: "#F0C75A",
+                textShadow: "4px 4px 0px #C83C94, 8px 8px 0px rgba(139, 69, 19, 0.3)",
+                WebkitTextStroke: "2px #C83C94",
               }}
             >
               SRIWIJAYA BESANJO
             </h3>
-            <p className="text-sm text-center md:text-left font-poppins">
-              Meningkatkan mutu pendidikan dan mempererat persaudaraan.
-            </p>
+            <p className="text-sm text-center md:text-left font-poppins">Meningkatkan mutu pendidikan dan mempererat persaudaraan.</p>
           </div>
           {/* Alamat Section */}
           <div className="space-y-6">
             <h3
-              className="font-alice text-3xl mb-4"
+              className="font-alice text-5xl md:text-6xl lg:text-7xl text-[#C83C94]" // Updated className
               style={{
-                color: "#C83C94", // Changed text color to Cerise Pink
-                textShadow: "2px 2px 0px rgba(0,0,0,0.2)",
-                WebkitTextStroke: "0.5px white",
+                color: "#F0C75A",
+                textShadow: "4px 4px 0px #C83C94, 8px 8px 0px rgba(139, 69, 19, 0.3)",
+                WebkitTextStroke: "2px #C83C94",
               }}
             >
               Alamat
             </h3>
             <div className="space-y-4 font-poppins">
               <div>
-                <h4 className="font-semibold text-lg text-[#C83C94] mb-1">Kampus Utama</h4>{" "}
-                {/* Changed text color to Cerise Pink */}
-                <p className="text-sm leading-relaxed">
-                  Jl. Raya Palembang-Prabumulih KM. 32, Indralaya Indah, Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera
-                  Selatan (30862)
-                </p>
+                <h4 className="font-semibold text-lg text-[#C83C94] mb-1">Kampus Utama</h4> {/* Changed text color to Cerise Pink */}
+                <p className="text-sm leading-relaxed">Jl. Raya Palembang-Prabumulih KM. 32, Indralaya Indah, Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera Selatan (30862)</p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg text-[#C83C94] mb-1">Sekretariat</h4>{" "}
-                {/* Changed text color to Cerise Pink */}
-                <p className="text-sm leading-relaxed">
-                  Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Ilir (30862)
-                </p>
+                <h4 className="font-semibold text-lg text-[#C83C94] mb-1">Sekretariat</h4> {/* Changed text color to Cerise Pink */}
+                <p className="text-sm leading-relaxed">Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Ilir (30862)</p>
               </div>
             </div>
           </div>
           {/* Kontak Section */}
           <div className="space-y-6">
             <h3
-              className="font-alice text-3xl mb-4"
+              className="font-alice text-5xl md:text-6xl lg:text-7xl text-[#C83C94]" // Updated className
               style={{
-                color: "#C83C94", // Changed text color to Cerise Pink
-                textShadow: "2px 2px 0px rgba(0,0,0,0.2)",
-                WebkitTextStroke: "0.5px white",
+                color: "#F0C75A",
+                textShadow: "4px 4px 0px #C83C94, 8px 8px 0px rgba(139, 69, 19, 0.3)",
+                WebkitTextStroke: "2px #C83C94",
               }}
             >
               Kontak
@@ -122,68 +113,41 @@ export default function FooterSection() {
           {/* Navigasi Section */}
           <div className="space-y-6">
             <h3
-              className="font-alice text-3xl mb-4"
+              className="font-alice text-5xl md:text-6xl lg:text-7xl text-[#C83C94]" // Updated className
               style={{
-                color: "#C83C94", // Changed text color to Cerise Pink
-                textShadow: "2px 2px 0px rgba(0,0,0,0.2)",
-                WebkitTextStroke: "0.5px white",
+                color: "#F0C75A",
+                textShadow: "4px 4px 0px #C83C94, 8px 8px 0px rgba(139, 69, 19, 0.3)",
+                WebkitTextStroke: "2px #C83C94",
               }}
             >
               Navigasi
             </h3>
             <div className="grid grid-cols-2 gap-4 font-poppins">
-              <a
-                href="#beranda"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#beranda" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Beranda
               </a>
-              <a
-                href="#about"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#about" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> About
               </a>
-              <a
-                href="#guest-star"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#guest-star" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Guest Star
               </a>
-              <a
-                href="#ticketing"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#ticketing" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Get Ticket
               </a>
-              <a
-                href="#gallery"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#gallery" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Gallery
               </a>
-              <a
-                href="#pra-event"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#pra-event" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Pra-Event
               </a>
-              <a
-                href="#konser-amal"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#konser-amal" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Konser Amal
               </a>
-              <a
-                href="#tournament-ml"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#tournament-ml" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Tournament Mobile Legends
               </a>
-              <a
-                href="#vocal-solo"
-                className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]"
-              >
+              <a href="#vocal-solo" className="flex items-center gap-2 text-sm hover:text-[#F0C75A] transition-colors text-[#C83C94]">
                 <ChevronRight className="w-4 h-4 text-[#C83C94]" /> Vocal Solo Online
               </a>
             </div>
@@ -197,5 +161,5 @@ export default function FooterSection() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

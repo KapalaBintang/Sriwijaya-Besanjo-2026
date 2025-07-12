@@ -143,6 +143,11 @@
   .animate-marquee-ltr:hover {
     animation-play-state: paused;
   }
+
+  /* New custom box-shadow for gold glow */
+  .shadow-gold-glow {
+    box-shadow: 0 0 15px rgba(240, 199, 90, 0.8), /* F0C75A with high opacity */ 0 0 30px rgba(240, 199, 90, 0.6), 0 0 45px rgba(240, 199, 90, 0.4);
+  }
 }
 
 * {

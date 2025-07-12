@@ -73,8 +73,9 @@ export default function FAQSection() {
             <h2
               className="font-alice text-5xl md:text-6xl lg:text-7xl text-[#C83C94]"
               style={{
-                textShadow: "4px 4px 0px #F0C75A, 8px 8px 0px rgba(139, 69, 19, 0.2)",
-                WebkitTextStroke: "1px #F0C75A",
+                color: "#F0C75A",
+                textShadow: "4px 4px 0px #C83C94, 8px 8px 0px rgba(139, 69, 19, 0.3)",
+                WebkitTextStroke: "2px #C83C94",
               }}
             >
               FAQ

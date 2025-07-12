@@ -1,4 +1,4 @@
-import { Users, Award, Lightbulb, HeartHandshake, Calendar, Clock } from "lucide-react"
+import { Users, Award, Lightbulb, HeartHandshake, Calendar, Clock } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -16,16 +16,14 @@ export default function AboutSection() {
           <h2
             className="font-alice text-5xl md:text-6xl lg:text-7xl mb-4"
             style={{
-              color: "#C83C94",
-              textShadow: "4px 4px 0px #F0C75A, 8px 8px 0px rgba(139, 69, 19, 0.2)",
-              WebkitTextStroke: "1px #F0C75A",
+              color: "#F0C75A",
+              textShadow: "4px 4px 0px #C83C94, 8px 8px 0px rgba(139, 69, 19, 0.3)",
+              WebkitTextStroke: "2px #C83C94",
             }}
           >
             Tentang Kami
           </h2>
-          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-poppins">
-            Pelajari lebih lanjut tentang organisasi kami dan event tahunan yang kami selenggarakan.
-          </p>
+          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-poppins">Pelajari lebih lanjut tentang organisasi kami dan event tahunan yang kami selenggarakan.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -47,14 +45,11 @@ export default function AboutSection() {
               HIMAJA UNSRI
             </h3>
             <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-6 font-poppins">
-              HIMAJA UNSRI adalah sebagai wadah yang menaungi mahasiswa dari Provinsi Jambi yang melanjutkan
-              pendidikannya di Universitas Sriwijaya. HIMAJA UNSRI pernah mengadakan kegiatan seperti, Sriwijaya
-              Besanjo, Himaja Cup, Himaja Fest, Donor Darah, Galang Dana, dan masih banyak kegiatan lainnya sebagai
-              bentuk kontribusi untuk Jambi.
+              HIMAJA UNSRI adalah sebagai wadah yang menaungi mahasiswa dari Provinsi Jambi yang melanjutkan pendidikannya di Universitas Sriwijaya. HIMAJA UNSRI pernah mengadakan kegiatan seperti, Sriwijaya Besanjo, Himaja Cup, Himaja
+              Fest, Donor Darah, Galang Dana, dan masih banyak kegiatan lainnya sebagai bentuk kontribusi untuk Jambi.
             </p>
             <p className="text-gray-800 text-base md:text-lg leading-relaxed font-poppins">
-              Kegiatan ini juga menjadi ajang untuk membentuk persaudaraan yang kuat antar anggota HIMAJA UNSRI, serta
-              menjadi tempat untuk mengembangkan minat dan bakat para anggotanya.
+              Kegiatan ini juga menjadi ajang untuk membentuk persaudaraan yang kuat antar anggota HIMAJA UNSRI, serta menjadi tempat untuk mengembangkan minat dan bakat para anggotanya.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-[#F0C75A]/20 text-[#C83C94] font-poppins">
@@ -87,14 +82,11 @@ export default function AboutSection() {
               SRIWIJAYA BESANJO
             </h3>
             <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-6 font-poppins">
-              Sriwijaya Besanjo adalah agenda tahunan yang selalu diadakan oleh Himpunan Mahasiswa Jambi di Universitas
-              Sriwijaya. Sriwijaya Besanjo adalah salah satu kegiatan dari HIMAJA untuk memberi informasi, motivasi,
-              serta aspirasi dalam rangka meningkatkan mutu pendidikan khususnya dalam tingkat pendidikan perguruan
-              tinggi.
+              Sriwijaya Besanjo adalah agenda tahunan yang selalu diadakan oleh Himpunan Mahasiswa Jambi di Universitas Sriwijaya. Sriwijaya Besanjo adalah salah satu kegiatan dari HIMAJA untuk memberi informasi, motivasi, serta aspirasi
+              dalam rangka meningkatkan mutu pendidikan khususnya dalam tingkat pendidikan perguruan tinggi.
             </p>
             <p className="text-gray-800 text-base md:text-lg leading-relaxed font-poppins">
-              Sriwijaya Besanjo juga dipersiapkan untuk menyambut para civitas akademik di Provinsi Jambi agar lebih
-              semangat dalam melanjutkan pendidikan di perguruan tinggi.
+              Sriwijaya Besanjo juga dipersiapkan untuk menyambut para civitas akademik di Provinsi Jambi agar lebih semangat dalam melanjutkan pendidikan di perguruan tinggi.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-[#C83C94]/20 text-[#F0C75A] font-poppins">
@@ -111,5 +103,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
