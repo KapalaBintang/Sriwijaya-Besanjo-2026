@@ -1,8 +1,9 @@
-import { Users, Award, Lightbulb, HeartHandshake, Calendar, Clock } from "lucide-react";
+import { Users, Award, Lightbulb, HeartHandshake, Calendar, Clock, Instagram } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 to-purple-50 relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-br from-pink-50 to-purple-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-1/4 w-48 h-48 bg-[#F0C75A] rounded-full opacity-5 blur-3xl animate-pulse"></div>
@@ -30,8 +31,8 @@ export default function AboutSection() {
           {/* HIMAJA UNSRI Section */}
           <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl border-4 border-[#C83C94]/30 transform hover:scale-[1.02] transition-transform duration-300">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-20 h-20 bg-[#C83C94] rounded-full flex items-center justify-center shadow-lg">
-                <Users className="w-10 h-10 text-white" />
+              <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg flex items-center justify-center bg-white">
+                <Image src="/images/HIMAJA-OK.png" alt="LOGO HIMAJA" width={300} height={300} className="object-contain" />
               </div>
             </div>
             <h3
@@ -44,11 +45,11 @@ export default function AboutSection() {
             >
               HIMAJA UNSRI
             </h3>
-            <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-6 font-poppins">
+            <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-6 font-poppins text-justify">
               HIMAJA UNSRI adalah sebagai wadah yang menaungi mahasiswa dari Provinsi Jambi yang melanjutkan pendidikannya di Universitas Sriwijaya. HIMAJA UNSRI pernah mengadakan kegiatan seperti, Sriwijaya Besanjo, Himaja Cup, Himaja
               Fest, Donor Darah, Galang Dana, dan masih banyak kegiatan lainnya sebagai bentuk kontribusi untuk Jambi.
             </p>
-            <p className="text-gray-800 text-base md:text-lg leading-relaxed font-poppins">
+            <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-4 font-poppins text-justify">
               Kegiatan ini juga menjadi ajang untuk membentuk persaudaraan yang kuat antar anggota HIMAJA UNSRI, serta menjadi tempat untuk mengembangkan minat dan bakat para anggotanya.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -68,7 +69,7 @@ export default function AboutSection() {
           <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl border-4 border-[#F0C75A]/30 transform hover:scale-[1.02] transition-transform duration-300">
             <div className="flex items-center justify-center mb-6">
               <div className="w-20 h-20 bg-[#F0C75A] rounded-full flex items-center justify-center shadow-lg">
-                <Calendar className="w-10 h-10 text-white" />
+                <Image src="/images/SB-OK.png" alt="LOGO SB" width={300} height={300} className="object-contain" />
               </div>
             </div>
             <h3
@@ -81,11 +82,11 @@ export default function AboutSection() {
             >
               SRIWIJAYA BESANJO
             </h3>
-            <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-6 font-poppins">
+            <p className="text-gray-800 text-base md:text-lg leading-relaxed mb-6 font-poppins text-justify">
               Sriwijaya Besanjo adalah agenda tahunan yang selalu diadakan oleh Himpunan Mahasiswa Jambi di Universitas Sriwijaya. Sriwijaya Besanjo adalah salah satu kegiatan dari HIMAJA untuk memberi informasi, motivasi, serta aspirasi
               dalam rangka meningkatkan mutu pendidikan khususnya dalam tingkat pendidikan perguruan tinggi.
             </p>
-            <p className="text-gray-800 text-base md:text-lg leading-relaxed font-poppins">
+            <p className="text-gray-800 text-base md:text-lg leading-relaxed font-poppins text-justify">
               Sriwijaya Besanjo juga dipersiapkan untuk menyambut para civitas akademik di Provinsi Jambi agar lebih semangat dalam melanjutkan pendidikan di perguruan tinggi.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -100,6 +101,13 @@ export default function AboutSection() {
               </span>
             </div>
           </div>
+        </div>
+        <div className="mt-20 text-center">
+          <p className="text-sm text-gray-500 font-poppins mb-2">Digital experience & website development by</p>
+          <a href="https://www.instagram.com/abdul_aziz_2412/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#C83C94] hover:text-[#F0C75A] transition-colors font-semibold">
+            <Instagram className="w-5 h-5" />
+            Abdul Aziz
+          </a>
         </div>
       </div>
     </section>

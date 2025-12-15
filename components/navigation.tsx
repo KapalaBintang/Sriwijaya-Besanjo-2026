@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react" // Import useEffect
 import { Shield, Flame, Bird, Mountain, Menu, X } from "lucide-react"
+import Image from "next/image";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -39,19 +40,30 @@ export default function Navigation() {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-[#C83C94] rounded-lg flex items-center justify-center border-2 border-yellow-400">
-              <Shield className="w-6 h-6 text-white" />
-            </div>
-            <div className="w-10 h-10 bg-[#F0C75A] rounded-lg flex items-center justify-center">
-              <Flame className="w-6 h-6 text-white" />
-            </div>
-            <div className="w-10 h-10 bg-[#C83C94] rounded-lg flex items-center justify-center">
-              <Bird className="w-6 h-6 text-white" />
-            </div>
-            <div className="w-10 h-10 bg-[#F0C75A] rounded-lg flex items-center justify-center">
-              <Mountain className="w-6 h-6 text-white" />
-            </div>
+          <div className="flex items-center space-x-4">
+            <div className="w-12 h-12 flex items-center justify-center">
+            <Image
+              src="/images/HIMAJA-OK.png" alt="himaja-logo" width={56} height={56}
+              className="object-contain"/>
+          </div>
+
+          <div className="w-12 h-12 flex items-center justify-center">
+            <Image
+              src="/images/RANGKAYO-OK.png" alt="rangkayo-logo" width={56} height={56}
+              className="object-contain"/>
+          </div>
+
+          <div className="w-12 h-12 flex items-center justify-center">
+            <Image
+              src="/images/SB-OK.png"alt="sb-logo" width={56} height={56}
+              className="object-contain"/>
+          </div>
+
+          <div className="w-12 h-12 flex items-center justify-center">
+            <Image
+              src="/images/WONDERA-OK.png" alt="wondera-logo" width={56} height={56}
+              className="object-contain" />
+           </div>
           </div>
         </div>
 

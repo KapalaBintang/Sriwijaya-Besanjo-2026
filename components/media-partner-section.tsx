@@ -1,13 +1,13 @@
-"use client" // This component needs to be a client component to use useState/useEffect
+"use client"; // This component needs to be a client component to use useState/useEffect
 
-import Image from "next/image"
-import { Star } from "lucide-react"
-import DecorativeBalloon from "./decorative-balloon" // Import decorative components
-import DecorativeConfetti from "./decorative-confetti"
-import DecorativeRibbon from "./decorative-ribbon"
-import DecorativeCard from "./decorative-card"
-import DecorativeFlower from "./decorative-flower"
-import { useState, useEffect } from "react" // Import useState and useEffect
+import Image from "next/image";
+import { Star } from "lucide-react";
+import DecorativeBalloon from "./decorative-balloon"; // Import decorative components
+import DecorativeConfetti from "./decorative-confetti";
+import DecorativeRibbon from "./decorative-ribbon";
+import DecorativeCard from "./decorative-card";
+import DecorativeFlower from "./decorative-flower";
+import { useState, useEffect } from "react"; // Import useState and useEffect
 
 const mediaPartners = [
   { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 1" },
@@ -18,70 +18,35 @@ const mediaPartners = [
   { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 6" },
   { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 7" },
   { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 8" },
-]
+];
 
 export default function MediaPartnerSection() {
-  const [isDesktop, setIsDesktop] = useState(false)
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768) // md breakpoint
-    }
+      setIsDesktop(window.innerWidth >= 768); // md breakpoint
+    };
 
-    handleResize() // Set initial value
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Calculate total width needed for marquee to ensure seamless loop
   // Assuming each logo is approx 200px wide including margin (w-[160px] + mx-4*2 = 160+32 = 192px, let's use 200px as a safe average)
-  const totalMarqueeWidth = mediaPartners.length * 2 * 200 // Duplicate content, so multiply by 2
+  const totalMarqueeWidth = mediaPartners.length * 2 * 200; // Duplicate content, so multiply by 2
 
   return (
-    <section className="py-20 relative overflow-hidden bg-[#C83C94]">
+    <section id="media-partner" className="py-20 bg-cover bg-center bg-no-reapeat" style={{ backgroundImage: "url('/images/transisitanah2.png')" }}>
       {/* Background decorative elements (Balloons, Confetti, Ribbons, Cards, Flowers) */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Balloons */}
-        <DecorativeBalloon
-          className="top-10 left-1/4"
-          size="w-24 h-32"
-          color="bg-[#F0C75A]"
-          rotation="rotate-6"
-          opacity="opacity-20"
-          animation="animate-float"
-        />
-        <DecorativeBalloon
-          className="bottom-20 right-1/3"
-          size="w-28 h-36"
-          color="bg-white"
-          rotation="-rotate-12"
-          opacity="opacity-20"
-          animation="animate-float delay-500"
-        />
-        <DecorativeBalloon
-          className="top-1/2 left-10"
-          size="w-20 h-28"
-          color="bg-[#F0C75A]"
-          rotation="rotate-20"
-          opacity="opacity-20"
-          animation="animate-float delay-1000"
-        />
-        <DecorativeBalloon
-          className="bottom-10 left-1/4"
-          size="w-20 h-28"
-          color="bg-white"
-          rotation="-rotate-8"
-          opacity="opacity-20"
-          animation="animate-float delay-1500"
-        />
-        <DecorativeBalloon
-          className="top-5 right-5"
-          size="w-24 h-32"
-          color="bg-[#F0C75A]"
-          rotation="rotate-15"
-          opacity="opacity-20"
-          animation="animate-float delay-2000"
-        />
+        <DecorativeBalloon className="top-10 left-1/4" size="w-24 h-32" color="bg-[#F0C75A]" rotation="rotate-6" opacity="opacity-20" animation="animate-float" />
+        <DecorativeBalloon className="bottom-20 right-1/3" size="w-28 h-36" color="bg-white" rotation="-rotate-12" opacity="opacity-20" animation="animate-float delay-500" />
+        <DecorativeBalloon className="top-1/2 left-10" size="w-20 h-28" color="bg-[#F0C75A]" rotation="rotate-20" opacity="opacity-20" animation="animate-float delay-1000" />
+        <DecorativeBalloon className="bottom-10 left-1/4" size="w-20 h-28" color="bg-white" rotation="-rotate-8" opacity="opacity-20" animation="animate-float delay-1500" />
+        <DecorativeBalloon className="top-5 right-5" size="w-24 h-32" color="bg-[#F0C75A]" rotation="rotate-15" opacity="opacity-20" animation="animate-float delay-2000" />
 
         {/* Confetti */}
         <DecorativeConfetti
@@ -91,42 +56,12 @@ export default function MediaPartnerSection() {
           opacity="opacity-40"
           animation="animate-pulse"
         />
-        <DecorativeConfetti
-          className="bottom-0 right-0 w-full h-full"
-          count={100}
-          colors={["bg-[#F0C75A]", "bg-white"]}
-          opacity="opacity-40"
-          animation="animate-pulse delay-1000"
-        />
+        <DecorativeConfetti className="bottom-0 right-0 w-full h-full" count={100} colors={["bg-[#F0C75A]", "bg-white"]} opacity="opacity-40" animation="animate-pulse delay-1000" />
 
         {/* Ribbons */}
-        <DecorativeRibbon
-          className="top-0 left-1/3"
-          width="w-48"
-          height="h-6"
-          color="bg-[#F0C75A]"
-          rotation="rotate-15"
-          opacity="opacity-30"
-          animation="animate-float delay-200"
-        />
-        <DecorativeRibbon
-          className="top-20 right-1/4"
-          width="w-40"
-          height="h-5"
-          color="bg-white"
-          rotation="-rotate-25"
-          opacity="opacity-30"
-          animation="animate-float delay-700"
-        />
-        <DecorativeRibbon
-          className="bottom-0 left-1/2"
-          width="w-56"
-          height="h-7"
-          color="bg-[#F0C75A]"
-          rotation="rotate-10"
-          opacity="opacity-30"
-          animation="animate-float delay-1200"
-        />
+        <DecorativeRibbon className="top-0 left-1/3" width="w-48" height="h-6" color="bg-[#F0C75A]" rotation="rotate-15" opacity="opacity-30" animation="animate-float delay-200" />
+        <DecorativeRibbon className="top-20 right-1/4" width="w-40" height="h-5" color="bg-white" rotation="-rotate-25" opacity="opacity-30" animation="animate-float delay-700" />
+        <DecorativeRibbon className="bottom-0 left-1/2" width="w-56" height="h-7" color="bg-[#F0C75A]" rotation="rotate-10" opacity="opacity-30" animation="animate-float delay-1200" />
 
         {/* Decorative Cards (subtle background elements) */}
         <DecorativeCard
@@ -184,35 +119,22 @@ export default function MediaPartnerSection() {
             </h2>
             <Star className="w-8 h-8 md:w-10 md:h-10 text-[#F0C75A] animate-spin delay-200" />
           </div>
-          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto font-poppins">
-            Terima kasih kepada semua media partner yang telah mendukung acara kami!
-          </p>
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto font-poppins">Terima kasih kepada semua media partner yang telah mendukung acara kami!</p>
         </div>
 
         {/* Marquee Container */}
         <div className="relative w-full overflow-hidden py-8 bg-white/20 rounded-2xl border-4 border-[#F0C75A]/50 shadow-xl">
-          <div
-            className={`flex flex-row ${isDesktop ? "flex-nowrap animate-marquee-ltr" : "flex-wrap justify-center"}`}
-            style={isDesktop ? { width: `${totalMarqueeWidth}px` } : {}}
-          >
+          <div className={`flex flex-row ${isDesktop ? "flex-nowrap animate-marquee-ltr" : "flex-wrap justify-center"}`} style={isDesktop ? { width: `${totalMarqueeWidth}px` } : {}}>
             {[...mediaPartners, ...(isDesktop ? mediaPartners : [])].map((partner, index) => (
               <div
                 key={index}
-                className={`flex-shrink-0 w-[160px] h-[80px] md:w-[200px] md:h-[100px] mx-4 flex items-center justify-center p-2 ${
-                  !isDesktop ? "mb-4" : ""
-                }`} // Add margin-bottom for mobile
+                className={`flex-shrink-0 w-[160px] h-[80px] md:w-[200px] md:h-[100px] mx-4 flex items-center justify-center p-2 ${!isDesktop ? "mb-4" : ""}`} // Add margin-bottom for mobile
               >
                 <Image
                   src={partner.src || "/placeholder.svg"}
                   alt={partner.alt}
-                  width={
-                    partner.src.includes("width=") ? Number.parseInt(partner.src.split("width=")[1].split("&")[0]) : 200
-                  }
-                  height={
-                    partner.src.includes("height=")
-                      ? Number.parseInt(partner.src.split("height=")[1].split("&")[0])
-                      : 80
-                  }
+                  width={partner.src.includes("width=") ? Number.parseInt(partner.src.split("width=")[1].split("&")[0]) : 200}
+                  height={partner.src.includes("height=") ? Number.parseInt(partner.src.split("height=")[1].split("&")[0]) : 80}
                   objectFit="contain"
                   className="grayscale hover:grayscale-0 transition-all duration-300"
                 />
@@ -222,5 +144,5 @@ export default function MediaPartnerSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

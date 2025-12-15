@@ -13,7 +13,7 @@ export default function CountdownSection() {
 
   useEffect(() => {
     // Set target date to January 2026 (you can adjust the specific date)
-    const targetDate = new Date("2026-01-15T00:00:00").getTime()
+    const targetDate = new Date("2026-01-10T00:00:00").getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -65,7 +65,7 @@ export default function CountdownSection() {
     <section
       className="py-20 relative overflow-hidden bg-cover bg-center"
       style={{
-        backgroundImage: `url('/images/pink-flowers-bg.png')`,
+        backgroundImage: `url('/images/deo-bg.png')`,
       }}
     >
       {/* Overlay for better readability - Opacity reduced */}
@@ -99,7 +99,7 @@ export default function CountdownSection() {
           {/* Event Location and Date */}
           <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-8 py-4 border border-white/20 max-w-md mx-auto">
             <Calendar className="w-6 h-6 text-[#F0C75A]" />
-            <span className="text-white text-lg md:text-xl font-semibold font-poppins">Jambi, Januari 2026</span>
+            <span className="text-white text-lg md:text-xl font-semibold font-poppins">Jambi, 10 Januari 2026</span>
           </div>
 
           {/* Additional Info */}

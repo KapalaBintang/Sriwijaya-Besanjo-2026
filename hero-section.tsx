@@ -8,7 +8,7 @@ import DecorativeCard from "@/components/decorative-card";
 import DecorativeFlower from "@/components/decorative-flower";
 import Image from "next/image";
 
-const rotatingTexts = ["PRAMUKA PARAMA", "Sriwijaya Besanjo 2026", "Wondera Potra"];
+const rotatingTexts = ["Sriwijaya Besanjo 2026", "Wondera Porta", "Membuka Gerbang Menyambut Peluang",];
 
 export default function HeroSection() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -28,7 +28,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 relative overflow-hidden">
+    <section id="beranda" className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 relative overflow-hidden">
       {/* Background decorative elements (existing and new) */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Existing circular elements - adjusted opacity for more subtle effect */}
@@ -131,26 +131,15 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Content - Mascot - Redesigned for luxury */}
+          {/* Right Content - Mascot Card */}
           <div className="flex justify-center lg:justify-end pt-12 lg:pt-0">
-            <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg group">
-              {/* Outer ornate frame/glow */}
-              <div className="absolute inset-0 rounded-[3rem] bg-gradient-to-br from-[#F0C75A] to-[#FFD700] p-2 shadow-gold-glow animate-pulse-slow">
-                <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border-4 border-[#C83C94] bg-gradient-to-br from-pink-100 to-purple-100">
-                  <Image src="/images/mascot-scout.png" alt="Mascot Pramuka" width={400} height={400} className="object-contain" />{" "}
-                </div>
-              </div>
-
-              {/* Decorative elements directly attached to the mascot frame */}
-              <DecorativeCard className="absolute -top-8 -left-8 z-30" size="w-24 h-16" rotation="rotate-12" baseColor="bg-white" accentColor="border-[#F0C75A]" opacity="opacity-100" animation="animate-float" type="ticket" />
-              <DecorativeFlower className="absolute -bottom-6 -right-6 z-30" size="w-20 h-20" petalColor="bg-[#E85BB8]" centerColor="bg-[#F0C75A]" opacity="opacity-100" animation="animate-spin-slow" />
-              <DecorativeRibbon className="absolute top-1/4 -right-10 z-30" width="w-24" height="h-3" color="bg-[#C83C94]" rotation="-rotate-45" opacity="opacity-100" animation="animate-float delay-200" />
-              <DecorativeBalloon className="absolute bottom-1/3 -left-10 z-30" size="w-16 h-20" color="bg-[#F0C75A]" rotation="rotate-20" opacity="opacity-100" animation="animate-float delay-400" />
-
-              {/* Original small decorative elements around mascot (now behind new frame elements) */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#F0C75A] rounded-full animate-bounce z-20"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#C83C94] rounded-full animate-bounce delay-500 z-20"></div>
-              <div className="absolute top-1/4 -left-6 w-4 h-4 bg-[#C83C94] rounded-full animate-pulse z-20"></div>
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] rounded-3xl bg-white border-4 border-[#C83C94]/30 shadow-xl group mt-[-150px]">
+              <Image
+                src="/images/maskot-sekaki.png"
+                alt="Maskot Wondera"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
             </div>
           </div>
         </div>

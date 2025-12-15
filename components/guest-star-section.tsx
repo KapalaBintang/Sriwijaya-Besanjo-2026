@@ -6,17 +6,16 @@ import DecorativeFlower from "./decorative-flower"
 // Data for the single guest star
 const guestStar = {
   id: 1,
-  name: "JERHEMY OWEN",
-  profession: "Youtube & TikTok Content Creator",
-  subProfession: "Environment Enthusiast",
+  name: "Amadeo Yesa",
+  profession: "H3rd Winner Clash of Champions Season 2 by Ruangguru (2025) ,Highest UTBK-SNBT Score in Indonesia (2023) ",
   summary:
-    "Jerhemy Owen, atau dikenal sebagai Owen, lahir 29 April 2002 merupakan seorang content creator asal Indonesia. Dengan latar belakang jurusan Teknologi Lingkungan dan Energi Terbarukan di Avans University of Applied Sciences, Breda, Belanda. Owen vokal memberikan edukasi tentang lingkungan dan energi terbarukan melalui platform media sosial miliknya. Ia juga kerap membagikan pengalamannya sebagai mahasiswa perantau asal Indonesia di Belanda.",
-  image: "/images/jerhemy-owen.png", // Using the provided image
+    "Amadeo Yesa merupakan seorang mahasiswa S1 Teknik Informatika di Institut Teknologi Sepuluh Nopember (ITS) Surabaya, lahir pada 25 Juni 2005, yang memiliki rekam jejak prestasi akademik yang sangat impresif, termasuk meraih Skor UTBK-SNBT Tertinggi di Indonesia pada tahun 2023, menjadi Juara 3 Clash of Champions Season 2 oleh Ruangguru (2025), serta memenangkan Medali Perak dalam National Science Olympiad in Chemistry (OSN) tahun 2022, di mana ia juga meraih Juara 1 NITRON UM dan Juara 5 National Logic Competition ITS.",
+  image: "/images/DeoFiks.jpg", // Using the provided image
 }
 
 export default function GuestStarSection() {
   return (
-    <section className="py-20 relative overflow-hidden" style={{ backgroundColor: "#C83C94" }}>
+    <section id="guest-star" className="py-20 relative overflow-hidden" style={{ backgroundColor: "#C83C94" }}>
       {/* Background Decorative Elements (Cards and Flowers) - now behind main content */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         {/* Decorative Cards */}
@@ -238,7 +237,7 @@ export default function GuestStarSection() {
               WebkitTextStroke: "1px #F0C75A",
             }}
           >
-            Bintang Tamu Utama
+            OUR GUEST STAR
           </h2>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto font-poppins">
             Bersiaplah untuk penampilan yang paling dinanti!
@@ -275,9 +274,8 @@ export default function GuestStarSection() {
               >
                 {guestStar.name}
               </h3>
-              <div className="flex flex-col items-center lg:items-start gap-1 text-gray-700 font-poppins">
+              <div className="flex flex-col items-center lg:items-start gap-1 text-gray-700 font-poppins" style={{ textAlign: "justify" }}>
                 <span className="text-lg font-semibold">{guestStar.profession}</span>
-                <span className="text-base text-gray-600">{guestStar.subProfession}</span>
               </div>
             </div>
 
@@ -292,7 +290,7 @@ export default function GuestStarSection() {
               >
                 SUMMARY
               </h4>
-              <p className="text-gray-800 text-base md:text-lg leading-relaxed font-poppins">{guestStar.summary}</p>
+              <p className="text-gray-800 text-base md:text-lg leading-relaxed font-poppins" style={{ textAlign: "justify" }} >{guestStar.summary}</p>
             </div>
 
             {/* Optional: Call to action button */}

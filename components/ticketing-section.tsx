@@ -4,6 +4,7 @@ import DecorativeConfetti from "./decorative-confetti";
 import DecorativeRibbon from "./decorative-ribbon";
 import DecorativeCard from "./decorative-card"; // Re-import DecorativeCard
 import DecorativeFlower from "./decorative-flower"; // Re-import DecorativeFlower
+import Link from "next/link";
 
 // Helper component for individual ticket cards
 const TicketCard = ({
@@ -16,6 +17,7 @@ const TicketCard = ({
   borderColor,
   buttonBg,
   buttonText,
+  linkTo,
 }: {
   title: string;
   type: string;
@@ -26,13 +28,14 @@ const TicketCard = ({
   borderColor: string;
   buttonBg: string;
   buttonText: string;
+  linkTo: string;
 }) => (
   <div className="relative rounded-3xl p-6 md:p-8 shadow-xl border-4 transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center h-full" style={{ background: cardBgGradient, borderColor: borderColor }}>
     <h3 className="font-alice text-3xl md:text-4xl mb-4" style={{ color: textColor, textShadow: `2px 2px 0px ${borderColor}` }}>
       {title}
     </h3>
     <div className="mb-6">
-      {/* PRAKASA PARAMA text with gradient/stroke effect */}
+      {/* WONDEA PORTA text with gradient/stroke effect */}
       <h4
         className="font-alice text-xl md:text-2xl font-bold" // Made responsive
         style={{
@@ -43,7 +46,7 @@ const TicketCard = ({
           WebkitTextStroke: `0.5px ${borderColor}`, // Use border color for stroke
         }}
       >
-        PRAKASA PARAMA
+        WONDERA PORTA
       </h4>
     </div>
     <p className="font-poppins text-base md:text-lg mb-4 flex-grow" style={{ color: textColor }}>
@@ -57,7 +60,9 @@ const TicketCard = ({
       className="w-full py-3 rounded-full font-poppins text-base md:text-lg font-semibold hover:scale-105 transition-transform" // Made responsive
       style={{ backgroundColor: buttonBg, color: buttonText, border: `2px solid ${buttonBg}` }}
     >
-      GET TICKET
+      <Link target="_blank" href={linkTo}>
+        GET TICKET
+      </Link>
     </Button>
   </div>
 );
@@ -195,49 +200,96 @@ export default function TicketingSection() {
                 WebkitTextStroke: "2px #C83C94",
               }}
             >
-              TICKET
+              UTBK ONLY
             </h2>
           </div>
         </div>
 
         {/* Ticket Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6x1 mx-auto">
           {/* EKA Card */}
           <TicketCard
             title="EKA"
             type="Solo Ticket"
-            price="Rp 50.000,-"
+            price="Rp 65.000,-"
             cardBgGradient="linear-gradient(to bottom right, #FFFFFF, #FDF2F8)" // White to very light pink
             textColor="#C83C94"
             prakasaGradientColors="linear-gradient(45deg, #F0C75A, #C83C94)" // Gold to Pink
             borderColor="#F0C75A"
             buttonBg="#C83C94"
             buttonText="white"
+            linkTo="https://docs.google.com/forms/d/1aR4QJ_ZB1hGPhJ4MXVprjx0PjxpcPn2FpJxkE-Gm_Fs/edit?usp=drivesdk"
           />
           {/* TRI Card (Highlighted) */}
+
           <TicketCard
             title="TRI"
             type="Bundle 3 Ticket"
-            price="Rp 135.000,-"
+            price="Rp 180.000,-"
             cardBgGradient="linear-gradient(to bottom right, #F0C75A, #FFD700)" // Gold to slightly darker gold
             textColor="#C83C94"
             prakasaGradientColors="linear-gradient(45deg, #C83C94, #6B2C5A)" // Pink to a darker pink/purple for better contrast
             borderColor="#C83C94"
             buttonBg="#C83C94"
             buttonText="white"
+            linkTo="https://forms.gle/KJ1cTEREwQ7Wcj7k8"
           />
           {/* PANCA Card */}
           <TicketCard
             title="PANCA"
             type="Bundle 5 Ticket"
-            price="Rp 215.000,-"
+            price="Rp 290.000,-"
             cardBgGradient="linear-gradient(to bottom right, #C83C94, #E85BB8)" // Pink to lighter pink
             textColor="white"
             prakasaGradientColors="linear-gradient(45deg, #F0C75A, #FFFFFF)" // Gold to White
             borderColor="#F0C75A"
             buttonBg="#F0C75A"
             buttonText="#C83C94"
+            linkTo="https://docs.google.com/forms/d/1aR4QJ_ZB1hGPhJ4MXVprjx0PjxpcPn2FpJxkE-Gm_Fs/edit?usp=drivesdk"
           />
+        </div>
+
+        {/* SECTION 2 — Ticket UTBK + SKD */}
+        <div className="mt-16 mx-auto ">
+          <h2
+            className="font-alice  text-5xl md:text-6xl text-center mb-12"
+            style={{
+              color: "#C83C94",
+              textShadow: "3px 3px 0px #F0C75A",
+              WebkitTextStroke: "1px #F0C75A",
+            }}
+          >
+            TICKET UTBK + SKD
+          </h2>
+
+          <div className="flex justify-center items-center flex-wrap gap-8 max-w-6xl mx-auto">
+            {/* TRI UTBK + SKD */}
+            <TicketCard
+              title="TRI"
+              type="Bundle 3 Ticket"
+              price="Rp 195.000,-"
+              cardBgGradient="linear-gradient(to bottom right, #F0C75A, #FFD700)"
+              textColor="#C83C94"
+              prakasaGradientColors="linear-gradient(45deg, #C83C94, #6B2C5A)"
+              borderColor="#C83C94"
+              buttonBg="#C83C94"
+              buttonText="white"
+              linkTo="https://forms.gle/KJ1cTEREwQ7Wcj7k8"
+            />
+            {/* PANCA UTBK + SKD */}
+            <TicketCard
+              title="PANCA"
+              type="Bundle 5 Ticket"
+              price="Rp 315.000,-"
+              cardBgGradient="linear-gradient(to bottom right, #C83C94, #E85BB8)"
+              textColor="white"
+              prakasaGradientColors="linear-gradient(45deg, #F0C75A, #FFFFFF)"
+              borderColor="#F0C75A"
+              buttonBg="#F0C75A"
+              buttonText="#C83C94"
+              linkTo="https://forms.gle/qX8df5HHztixGu9m7"
+            />
+          </div>
         </div>
       </div>
     </section>

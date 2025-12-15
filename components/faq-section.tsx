@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "Apakah ada bintang tamu spesial?",
-    answer: "Ya, kami sangat antusias untuk mengumumkan bahwa kami akan menghadirkan bintang tamu spesial Jerhemy Owen, seorang content creator dan environment enthusiast yang inspiratif.",
+    answer: "Ya, kami sangat antusias untuk mengumumkan bahwa kami akan menghadirkan bintang tamu spesial Amadeo Yesa, seorang 3rd Winner CoC session 2 dan merupakan peraih skor UTBK tertinggi tahun 2023 di Indonesia.",
   },
   {
     question: "Apa manfaat mengikuti Sriwijaya Besanjo?",
@@ -57,7 +57,7 @@ export default function FAQSection() {
   const totalMarqueeWidth = faqs.length * 2 * 350;
 
   return (
-    <section className="py-20 relative overflow-hidden bg-gradient-to-br from-pink-50 to-purple-50">
+    <section id="faq" className="py-20 relative overflow-hidden bg-gradient-to-br from-pink-50 to-purple-50 text-justify">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-1/4 w-48 h-48 bg-[#F0C75A] rounded-full opacity-5 blur-3xl animate-pulse"></div>
