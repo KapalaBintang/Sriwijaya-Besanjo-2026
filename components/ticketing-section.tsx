@@ -209,8 +209,8 @@ export default function TicketingSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6x1 mx-auto">
           {/* EKA Card */}
           <TicketCard
-            title="EKA"
-            type="Solo Ticket"
+            title="EKA TO + SKD"
+            type=""
             price="Rp 65.000,-"
             cardBgGradient="linear-gradient(to bottom right, #FFFFFF, #FDF2F8)" // White to very light pink
             textColor="#C83C94"
@@ -218,13 +218,13 @@ export default function TicketingSection() {
             borderColor="#F0C75A"
             buttonBg="#C83C94"
             buttonText="white"
-            linkTo="https://docs.google.com/forms/d/1aR4QJ_ZB1hGPhJ4MXVprjx0PjxpcPn2FpJxkE-Gm_Fs/edit?usp=drivesdk"
+            linkTo="https://docs.google.com/forms/d/1kUBacasUV5IzY7qkIPAbH3T9nxsP3wQxEf6IPo7AOdI/edit"
           />
           {/* TRI Card (Highlighted) */}
 
           <TicketCard
             title="TRI"
-            type="Bundle 3 Ticket"
+            type=""
             price="Rp 180.000,-"
             cardBgGradient="linear-gradient(to bottom right, #F0C75A, #FFD700)" // Gold to slightly darker gold
             textColor="#C83C94"
@@ -237,7 +237,7 @@ export default function TicketingSection() {
           {/* PANCA Card */}
           <TicketCard
             title="PANCA"
-            type="Bundle 5 Ticket"
+            type=""
             price="Rp 290.000,-"
             cardBgGradient="linear-gradient(to bottom right, #C83C94, #E85BB8)" // Pink to lighter pink
             textColor="white"
@@ -265,9 +265,9 @@ export default function TicketingSection() {
           <div className="flex justify-center items-center flex-wrap gap-8 max-w-6xl mx-auto">
             {/* TRI UTBK + SKD */}
             <TicketCard
-              title="TRI"
-              type="Bundle 3 Ticket"
-              price="Rp 195.000,-"
+              title="EKA"
+              type=""
+              price="Rp 70.000,-"
               cardBgGradient="linear-gradient(to bottom right, #F0C75A, #FFD700)"
               textColor="#C83C94"
               prakasaGradientColors="linear-gradient(45deg, #C83C94, #6B2C5A)"
@@ -278,9 +278,9 @@ export default function TicketingSection() {
             />
             {/* PANCA UTBK + SKD */}
             <TicketCard
-              title="PANCA"
-              type="Bundle 5 Ticket"
-              price="Rp 315.000,-"
+              title="TRI"
+              type=""
+              price="Rp 195.000,-"
               cardBgGradient="linear-gradient(to bottom right, #C83C94, #E85BB8)"
               textColor="white"
               prakasaGradientColors="linear-gradient(45deg, #F0C75A, #FFFFFF)"
