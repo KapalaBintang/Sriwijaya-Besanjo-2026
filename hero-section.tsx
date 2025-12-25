@@ -108,10 +108,12 @@ export default function HeroSection() {
 
             {/* Call to action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-8 justify-center lg:justify-start">
-              <button className="bg-[#C83C94] hover:bg-[#B8358A] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-poppins">Daftar Sekarang</button>
-              <button className="bg-transparent hover:bg-[#4a5d3a]/10 text-[#C83C94] font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 border-2 border-[#C83C94] hover:border-[#B8358A] font-poppins">
-                Pelajari Lebih Lanjut
-              </button>
+              <a
+                href="#ticketing-section"
+                className="bg-[#C83C94] hover:bg-[#B8358A] text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-poppins text-center"
+              >
+                Daftar Sekarang
+              </a>
             </div>
 
             {/* Event info */}
@@ -133,9 +135,11 @@ export default function HeroSection() {
 
           {/* Right Content - Mascot Card */}
           <div className="flex justify-center lg:justify-end pt-12 lg:pt-0">
-            <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] rounded-3xl bg-white border-4 border-[#C83C94]/30 shadow-xl group mt-[-150px]">
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] 
+                            rounded-3xl bg-white border-4 border-[#C83C94]/30 
+                            shadow-xl group mt-[-150px] overflow-hidden">
               <Image
-                src="/images/maskot-sekaki.png"
+                src="/images/CIMKO.png"
                 alt="Maskot Wondera"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"

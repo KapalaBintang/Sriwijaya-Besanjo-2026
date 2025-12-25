@@ -69,7 +69,7 @@ const TicketCard = ({
 
 export default function TicketingSection() {
   return (
-    <section className="py-20 relative overflow-hidden bg-gradient-to-br from-pink-50 to-white">
+    <section id="ticketing-section" className="py-20 relative overflow-hidden bg-gradient-to-br from-pink-50 to-white">
       {/* Background decorative elements (Balloons, Confetti, Ribbons, Cards, Flowers) */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Balloons - Increased quantity and variety */}
@@ -218,7 +218,7 @@ export default function TicketingSection() {
             borderColor="#F0C75A"
             buttonBg="#C83C94"
             buttonText="white"
-            linkTo="https://docs.google.com/forms/d/1aR4QJ_ZB1hGPhJ4MXVprjx0PjxpcPn2FpJxkE-Gm_Fs/edit"
+            linkTo="https://forms.gle/gUSWfwzQXnZeLWvi8"
           />
           {/* TRI Card (Highlighted) */}
 
@@ -232,7 +232,8 @@ export default function TicketingSection() {
             borderColor="#C83C94"
             buttonBg="#C83C94"
             buttonText="white"
-            linkTo="https://docs.google.com/forms/d/1KV7QghX9FfCiZbNUQGKVuwdimE6dDoOJnuxmw4xdCcs/edit"
+            linkTo="https://forms.gle/zvjXxJeCP9Xwnqay6
+"
           />
           {/* PANCA Card */}
           <TicketCard
@@ -245,7 +246,7 @@ export default function TicketingSection() {
             borderColor="#F0C75A"
             buttonBg="#F0C75A"
             buttonText="#C83C94"
-            linkTo="https://docs.google.com/forms/d/1tiIHWJpAcD15SWXowEJCBuVO4sXxYgiqFBom9BeYRo4/edit"
+            linkTo="https://forms.gle/uHwGPkQmLHy4EDs66"
           />
         </div>
 
@@ -274,7 +275,7 @@ export default function TicketingSection() {
               borderColor="#C83C94"
               buttonBg="#C83C94"
               buttonText="white"
-              linkTo="https://docs.google.com/forms/d/1kUBacasUV5IzY7qkIPAbH3T9nxsP3wQxEf6IPo7AOdI/edit"
+              linkTo="https://forms.gle/jo8eSBiebPEYLVuk9"
             />
             {/* PANCA UTBK + SKD */}
             <TicketCard
@@ -287,7 +288,7 @@ export default function TicketingSection() {
               borderColor="#F0C75A"
               buttonBg="#F0C75A"
               buttonText="#C83C94"
-              linkTo="https://docs.google.com/forms/d/1OWkbLtTqXOdJ1Eqb48bJGe6bs1HoZ5YdtPceuF2ONsw/edit"
+              linkTo="https://forms.gle/65xnorfvAPSsnXJn6"
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ import DecorativeFlower from "./decorative-flower"
 const guestStar = {
   id: 1,
   name: "Amadeo Yesa",
-  profession: "H3rd Winner Clash of Champions Season 2 by Ruangguru (2025) ,Highest UTBK-SNBT Score in Indonesia (2023) ",
+  profession: "2rd Winner Clash of Champions Season 2 by Ruangguru (2025) ,Highest UTBK-SNBT Score in Indonesia (2023) ",
   summary:
     "Amadeo Yesa merupakan seorang mahasiswa S1 Teknik Informatika di Institut Teknologi Sepuluh Nopember (ITS) Surabaya, lahir pada 25 Juni 2005, yang memiliki rekam jejak prestasi akademik yang sangat impresif, termasuk meraih Skor UTBK-SNBT Tertinggi di Indonesia pada tahun 2023, menjadi Juara 3 Clash of Champions Season 2 oleh Ruangguru (2025), serta memenangkan Medali Perak dalam National Science Olympiad in Chemistry (OSN) tahun 2022, di mana ia juga meraih Juara 1 NITRON UM dan Juara 5 National Logic Competition ITS.",
   image: "/images/DeoFiks.jpg", // Using the provided image
@@ -295,9 +295,14 @@ export default function GuestStarSection() {
 
             {/* Optional: Call to action button */}
             <div className="pt-4">
-              <button className="bg-[#C83C94] hover:bg-[#B8358A] text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-poppins">
-                Lihat Profil Lengkap
-              </button>
+              <a
+                href="https://www.instagram.com/amadeo_yesa?igsh=ODk5Z3l6MHhxeGZy"
+                target="_blank"
+                rel="noopener noreferrer">
+                <button className="bg-[#C83C94] hover:bg-[#B8358A] text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-poppins">
+                  Lihat Profil Lengkap
+                </button>
+              </a>
             </div>
           </div>
         </div>

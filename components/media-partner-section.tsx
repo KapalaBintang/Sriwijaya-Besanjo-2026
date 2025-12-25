@@ -10,14 +10,25 @@ import DecorativeFlower from "./decorative-flower";
 import { useState, useEffect } from "react"; // Import useState and useEffect
 
 const mediaPartners = [
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 1" },
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 2" },
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 3" },
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 4" },
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 5" },
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 6" },
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 7" },
-  { src: "/placeholder.svg?height=80&width=200", alt: "Media Partner 8" },
+  { src: "/images/md1.jpeg", alt: "Media Partner 1" },
+  { src: "/images/md2.jpeg", alt: "Media Partner 2" },
+  { src: "/images/md3.jpeg", alt: "Media Partner 3" },
+  { src: "/images/md4.jpeg", alt: "Media Partner 4" },
+  { src: "/images/md5.jpeg", alt: "Media Partner 5" },
+  { src: "/images/md6.jpeg", alt: "Media Partner 6" },
+  { src: "/images/md7.jpeg", alt: "Media Partner 7" },
+  { src: "/images/md8.jpeg", alt: "Media Partner 8" },
+  { src: "/images/md9.jpeg", alt: "Media Partner 9" },
+  { src: "/images/md10.jpeg", alt: "Media Partner 10" },
+  { src: "/images/md11.jpeg", alt: "Media Partner 11" },
+  { src: "/images/md12.jpeg", alt: "Media Partner 12" },
+  { src: "/images/md13.jpeg", alt: "Media Partner 13" },
+  { src: "/images/md14.jpeg", alt: "Media Partner 14" },
+  { src: "/images/md15.jpeg", alt: "Media Partner 15" },
+  { src: "/images/md16.jpeg", alt: "Media Partner 16" },
+  { src: "/images/sponsor1.jpg", alt: "Sponsor 1" },
+  { src: "/images/sponsor2.jpg", alt: "Sponsor 2" },
+  { src: "/images/sponsor3.jpg", alt: "Sponsor 3" },
 ];
 
 export default function MediaPartnerSection() {
