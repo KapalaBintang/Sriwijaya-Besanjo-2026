@@ -29,6 +29,7 @@ const mediaPartners = [
   { src: "/images/sponsor1.jpg", alt: "Sponsor 1" },
   { src: "/images/sponsor2.jpg", alt: "Sponsor 2" },
   { src: "/images/sponsor3.jpg", alt: "Sponsor 3" },
+  { src: "/images/sponsor4.jpg", alt: "Sponsor 4" },
 ];
 
 export default function MediaPartnerSection() {
